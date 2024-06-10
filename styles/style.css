@@ -1,0 +1,1361 @@
+/*
+filename: style.css
+authors: Xuan Tuan Minh Nguyen, Nathan Wijaya, Mai An Nguyen, Nhat Minh Tran, Amiru Manthrige
+created: 29-Mar-2023
+description: This file is the main file of whole css!
+*/
+
+/**************************** General Styling ***********************/
+
+/* Import font from file */
+@font-face {
+  font-family: "Inter";
+  src: url(/styles/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Apply font to all text */
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+/******************************************************************/
+
+/**************************** Start of index.css ***********************/
+.index-body {
+  margin: 0;
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+/* add background image */
+.index-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Image Source: https://4kwallpapers.com/abstract/windows-11-gradient-background-bloom-light-backgrounds-5k-8411.html */
+  background-image: url("./images/ha.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.4;
+}
+ul {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4vw;
+}
+
+.img .img-2 {
+  width: 300px;
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 40px;
+  transition: 0.5s ease-in-out;
+}
+
+.img .first-para {
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.img .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.img .column {
+  padding: 10px;
+  text-align: center;
+  margin: 30px;
+  border: 2px;
+  background-color: #ccd5f8;
+  border-style: solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.img .column:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #48abe0;
+  background-color: white;
+  box-shadow: 0 0 20px 10px #9bc7f4;
+}
+
+.logo-indi {
+  margin: 20px;
+  max-height: 100px;
+}
+.logos {
+  padding: 50px;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-x: auto;
+}
+/* Container styles */
+.reviews-container {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 40px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Title styles */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 32px;
+  color: #333;
+}
+/* Review card styles */
+.review-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+/* Hover effect for review card */
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* Rating styles */
+.rating {
+  font-size: 24px;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+/* Star styles */
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+/* Review text styles */
+.review-text {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+/* Author styles */
+.author {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  text-align: right;
+}
+
+.link-report a {
+  text-decoration: none !important;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.link-report {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add a hover effect to elements */
+selector:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-2:hover {
+  transform: scale(1.1);
+}
+
+/**************************** End of index.css ***********************/
+
+/**************************** Start of about.css ***********************/
+
+/* Remove padding and margin on all elements in the page*/
+.about-class * {
+  margin: 0;
+  padding: 0;
+}
+
+#about-body {
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-h1 {
+  text-align: center;
+  font-size: 4vw;
+  color: black;
+}
+
+.about-h2 {
+  margin-top: 40px;
+}
+
+.about-h3 {
+  margin-top: 30px;
+}
+.about-container p {
+  margin-bottom: 40px;
+}
+
+.about-mail p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 50px 50px 50px;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.about-group-info {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.about-group-info dl {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.about-group-info dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-group-info dd {
+  margin-left: 0;
+  margin-bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+
+/* Member cards */
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.about-card img {
+  margin-top: 15px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+.about-card h3 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 5px;
+  transition: 0.3s all ease;
+}
+.about-card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+/* Timetable */
+.about-timetable {
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.about-timetable h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.about-timetable table {
+  margin: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.about-timetable th,
+.about-timetable td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  transition: 0.5s;
+}
+
+.about-timetable th {
+  background-color: #333;
+  color: #fff;
+}
+
+.about-mail {
+  margin-top: 50px;
+}
+
+/* Contact us button */
+.about-mail a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+/* Group image */
+.about-group-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.about-group-img img {
+  max-width: 800px;
+  max-height: 800px;
+  transition: 0.3s all ease-in-out;
+}
+
+.about-group-img figcaption {
+  font-size: large;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: 0.3s all ease-in-out;
+}
+
+#about-footer {
+  margin-top: auto;
+}
+/**************************** End of about.css ***********************/
+
+/**************************** Start of job.css ***********************/
+
+.job-class * {
+  margin: 0;
+  padding: 0;
+}
+
+/* the whole content */
+#job-main {
+  /* margin: 1em 2em 1em 2em; */
+  justify-self: center;
+  margin: auto;
+  word-wrap: break-word;
+  line-height: 1.25em;
+  font-size: 1em;
+  width: 80vw;
+  text-align: left;
+}
+
+/* relating to design n layout of boxes */
+/* adding margin for each section (each jobs' descriptions) */
+#job-main section {
+  margin: 2em 0 0 0;
+}
+/* positioning the table of contents */
+#job-main .table-of-contents {
+  width: 100vw;
+  display: block;
+}
+/* positioning the content of job descriptions to the left */
+#job-main .job-des {
+  display: inline;
+  float: left;
+  width: 65%;
+}
+/* positioning the references aka the aside to the left and fixed the width to 25% of viewport width */
+#job-main aside {
+  float: right;
+  border: 0.5px solid rgb(51, 74, 75);
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+  width: 25vw;
+}
+/* sections with contents placing in boxes, namely the tables and some descriptions for the jobs */
+#job-main dl,
+#job-main table,
+#job-main tr,
+#job-main td {
+  border: 0.5px solid rgb(51, 74, 75);
+  border-collapse: collapse;
+}
+/* small index and their content (beneath the job title) */
+#job-main dl {
+  border-radius: 5px;
+  margin: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: fit-content;
+}
+
+/* relating to text - the actual content */
+/* the title "Job description" */
+#job-main h1 {
+  color: black;
+  text-align: center;
+  font-size: 4vw;
+  padding: 0.5em 0 0.5em 0;
+}
+/* job title */
+#job-main section h2 {
+  font-size: 1.75em;
+  color: #6378bb;
+  padding: 0.75em 0 0.75em 0;
+}
+/* indexes */
+#job-main dt,
+#job-main h2,
+#job-main h3,
+#job-main h4 {
+  color: #242424;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+/* big indexes (h3 only) */
+#job-main h3 {
+  font-size: 1.5em;
+  padding: 0.5em 0 0.5em 0;
+}
+/* smaller indexes (h4) */
+#job-main h4 {
+  font-size: 1.25em;
+  padding: 0.5em 0 0.5em 0;
+}
+/* indexes inside bordered boxes (dt) */
+#job-main dt {
+  margin: 0.5em 0 0.125em 0;
+}
+/* content of those indexes */
+#job-main dd {
+  text-indent: 2em;
+}
+/* content of every indexes */
+#job-main p,
+#job-main li,
+#job-main td,
+#job-main dd {
+  color: #242424;
+}
+/* text inside tables */
+#job-main td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+/* paragraph indentation */
+#job-main p {
+  text-indent: 2em;
+  text-align: left;
+}
+/* bullet pt and ordered list indentation */
+#job-main ul,
+#job-main ol {
+  padding: 0.25em 0 0.5em 2em;
+}
+/* in-text citation - linking to the reference section */
+#job-main sup {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+/* the horizontal rule aka the thematic break (hr) */
+#job-main hr {
+  border-bottom: 0.5px solid #242424;
+  width: 80%;
+  margin: 2em 0em 1em 0em;
+}
+
+/* links */
+#job-main a:link {
+  color: rgb(100, 125, 126);
+  text-decoration: none;
+}
+
+#job-main a:visited {
+  color: #6378bb;
+  text-decoration: none;
+}
+#job-main a:hover {
+  color: #9bc7f4;
+  text-decoration: underline;
+}
+#job-main a:active {
+  color: rgb(51, 51, 51);
+  text-decoration: underline;
+}
+
+/**************************** End of job.css ***********************/
+
+/**************************** Start of apply.css ***********************/
+
+/* Styles form inputs for better appearance
+Adapted from W3Schools - https://www.w3schools.com/howto/howto_css_stacked_form.asp
+*/
+.apply-class * {
+  margin: 0;
+  padding: 0;
+}
+.apply-input[type="text"],
+.apply-input[type="tel"],
+.apply-input[type="email"],
+.apply-input[type="date"],
+.apply-textarea,
+.apply-select {
+  width: 100%;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.apply-input[type="submit"] {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.apply-h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin: 0;
+}
+
+.apply-h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* Adds spacing between inputs in a table */
+.apply-td {
+  padding-right: 10px;
+}
+
+/* Adds spacing between form elements */
+.apply-input,
+.apply-textarea,
+.apply-select {
+  margin: 10px 0 10px 0;
+  display: inline-block;
+}
+
+/* Adds spacing between form labels */
+.apply-label {
+  margin: 20px 0 0 0;
+  display: inline-block;
+}
+
+/* Adds spacing and borders on fieldsets to easier distinguish between sections */
+.apply-section .apply-gender-list {
+  margin: 20px 0 0 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Removes margin from the 'gender_list' ID fieldset */
+.apply-gender-list > label {
+  margin: 0;
+}
+
+/* Styles the submit button on forms
+  Adapted from W3Schools - https://www.w3schools.com/howto/howto_css_stacked_form.asp
+  */
+.apply-input[type="submit"] {
+  width: 30%;
+  background-color: #5d79c0;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 105%;
+  margin-bottom: 100px;
+}
+
+/* Reduces the width of the main content on pages and centers it */
+.apply-container {
+  width: 60%;
+  margin: auto;
+}
+
+/* Extends width of the table to take up all space allowed */
+.apply-table {
+  width: 100%;
+}
+
+/* Adapted from https://form.taxi/en/sample-forms/job-application-form */
+.apply-section {
+  font-size: 100%;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  border: 0;
+  padding: 0;
+}
+
+/* Adapted from https://form.taxi/en/sample-forms/job-application-form */
+.apply-section > legend {
+  font-weight: 700;
+  font-size: 1.75em;
+  padding: 0;
+  padding-top: 15px;
+  color: #6378bb;
+}
+
+.apply-error {
+  color: #ff0004;
+}
+
+.apply-success-h2 {
+  text-align: center;
+}
+
+.apply-success-p {
+  text-align: center;
+}
+
+/* Modal CSS adapted from https://codepen.io/Idered/pen/DdeoeW */
+.success-modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.25s ease;
+}
+
+.success-modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* Don't show the checkbox for the success modal to the user */
+.show-success-modal {
+  display: none;
+}
+
+.show-success-modal:checked + .success-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.show-success-modal:checked + .success-modal .success-modal__inner {
+  top: 0;
+}
+
+.success-modal__inner {
+  transition: top 0.25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 4em;
+  height: 450px;
+  text-align: center;
+}
+
+.success-modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.success-modal__close:after,
+.success-modal__close:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.success-modal__close:hover:after,
+.success-modal__close:hover:before {
+  background: #aaa;
+}
+
+.success-modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .success-modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+/**************************** End of apply.css ***********************/
+
+/**************************** Start of loginmanager.css ***********************/
+
+.login_manager-class * {
+  margin: 0;
+  padding: 0;
+}
+
+/* username and password input */
+#login_manager-body input {
+  width: 80%;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px 20px 10px 20px;
+  display: inline-block;
+}
+
+#login_manager-body button {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  width: auto;
+  background-color: #5d79c0;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+/* username and password label */
+#login_manager-body label {
+  margin: auto;
+  display: inline-block;
+}
+
+/* heading 1 */
+#login_manager-body h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin: 10px;
+  color: black;
+}
+
+/* position and border of the form (for typing in username and password) */
+#login_manager-body form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* whole main part of the page */
+#login_manager-body {
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  /* justify-content: center; */
+  /* display: flex; */
+}
+
+#form-error-login {
+  color: red;
+}
+
+/**************************** End of loginmanager.css ***********************/
+
+/**************************** Start of manage.css ***********************/
+.manage-class * {
+  margin: 0;
+  padding: 0;
+}
+
+/* whole main part of the page */
+#manage-body {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+}
+
+/* headings*/
+#manage-body h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin: 20px 0 0 0;
+  color: black;
+}
+
+#manage-body h2 {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  color: #6378bb;
+  margin: 20px 0 20px 0;
+  transition: 0.5s ease-in-out;
+}
+
+/* table design */
+#manage-body table,
+#manage-body tr,
+#manage-body th,
+#manage-body td {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  transition: 0.5s;
+  color: black;
+  background-color: #e7e7e7;
+}
+
+#manage-body table {
+  margin: 0;
+  border-collapse: collapse;
+  width: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+#manage-body th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* form (input, label, button design) */
+#manage-body input {
+  width: auto;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px 0 10px 0;
+  display: inline-block;
+}
+
+#manage-body label {
+  margin: 20px 0 0 0;
+  display: inline-block;
+}
+
+#manage-body button,
+#manage-body input[type="submit"] {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  width: auto;
+  text-align: center;
+  background-color: #5d79c0;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 10px;
+  margin-bottom: 50px;
+}
+
+/**************************** End of manage.css ***********************/
+
+/**************************** Start of enhancements.css ***********************/
+
+.enhancements-main {
+  padding: 50px;
+}
+/**************************** End of enhancements.css ***********************/
+
+/**************************** Start of Header and Footer ***********************/
+/* Header navigation */
+#header-nav {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  line-height: 32px; /* height between words in nav */
+  padding: 0px 10px;
+  position: static;
+  background: #d9ecfd; /* header color backup #EDF1FF #ccd5f8; footer color backup 00093c 2d0b00 */
+  background: linear-gradient(to right, #78828a, #283b4e, #451100);
+  text-align: center;
+  clear: both;
+  display: flex;
+  overflow-y: auto;
+  justify-content: center;
+}
+
+/* logo on the left */
+#header-nav .logo {
+  width: 80px;
+  height: auto;
+  font-weight: bold;
+  float: left;
+  display: inline;
+  /* margin-left: 50px; */
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer; /* show cursor not the mouse */
+  justify-content: center;
+}
+
+#header-nav ul {
+  display: flex;
+  justify-content: center;
+  /* float: left; */
+  margin-top: 0px;
+}
+/* display horizontally the nav */
+/* display horizontally the nav */
+#header-nav li {
+  display: flex;
+  display: inline-block;
+  list-style: none;
+  /* not showing dot of ul ol */
+}
+
+#header-nav li a {
+  display: flex;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 30px 114px;
+  color: white;
+  text-decoration: none;
+}
+
+/*decoration more transition of header */
+#header-nav li a:hover {
+  background-color: white;
+  color: #ff8c69;
+  transition: 0.5s ease-out;
+  /* for the footer */
+}
+
+/* Changes the colour of the link when the user is on the page */
+#selected-page {
+  background-color: #6777b6;
+  transition: 0.5s ease-in;
+}
+/***********************************FOOTER*************************/
+
+#general-footer {
+  width: 100%;
+  /* position: absolute; */
+  bottom: 0;
+  /* color change left to right of linear-gradient */
+  background: linear-gradient(to right, #78828a, #283b4e, #451100);
+  color: #fff;
+  padding: 20px 0 10px;
+  border-top-left-radius: 120px;
+  font-size: 13px;
+  line-height: 12px;
+  clear: both;
+  margin-top: 50px;
+}
+
+.footer-row {
+  width: 95%; /* gap between each row including 3 rows*/
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* divide the column equally */
+.footer-col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.footer-col ul {
+  padding-left: 0px;
+}
+
+/*team logo */
+#general-footer .logo {
+  width: 120px;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+/* col 2 email phone */
+.footer-col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-email-id {
+  width: fit-content;
+  border-bottom: 1px solid #333;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.footer-email-id a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* last column, no need submit button */
+.footer-col form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+.footer-col form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+/* copy right the end */
+.footer-col hr {
+  width: 95%;
+  border: 0;
+  border-bottom: 1px solid #333;
+  margin: 10px auto;
+}
+.footer-col a,
+.footer-col h3,
+.footer-col p {
+  transition: 0.3s ease-in-out;
+}
+
+.footer-col a:hover,
+.footer-col h3:hover,
+.footer-col p:hover {
+  color: #9bc7f4;
+  transform: scale(1.2);
+}
+
+#general-footer .logo:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  #header-nav {
+    height: 150%;
+  }
+  .footer-row {
+    flex-wrap: nowrap;
+  }
+
+  .footer-col {
+    flex-basis: 25%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #header-nav {
+    height: 120%;
+  }
+  .footer-col {
+    flex-basis: 20%;
+  }
+}
+
+/**************************** End of Header and Footer ***********************/
+
+/**************************** Start of Enhancement 1 ***********************/
+
+/*
+CSS adapted from:
+https://codepen.io/denic/pen/GRoOxbM
+https://www.sitepoint.com/css-typewriter-effect/ */
+
+/* Contains the heading + typing cursor and centers it */
+.header-container {
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+  margin-bottom: 30px;
+}
+
+/* Animation for index page heading */
+
+.index-typed-out {
+  overflow: hidden;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  animation: index-typing 1.5s steps(17, end) forwards,
+    blink 0.5s step-end infinite alternate;
+  width: 0;
+}
+
+@keyframes index-typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 37%;
+  }
+}
+
+/* Animation for apply page heading */
+.apply-typed-out {
+  overflow: hidden;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  animation: apply-typing 1.5s steps(24, end) forwards,
+    blink 0.5s step-end infinite alternate;
+  width: 0;
+}
+
+@keyframes apply-typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 83%;
+  }
+}
+
+/* Animation for about page heading */
+.about-typed-out {
+  overflow: hidden;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  animation: about-typing 1.5s steps(15, end) forwards,
+    blink 0.5s step-end infinite alternate;
+  width: 0;
+}
+
+@keyframes about-typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animation for job page heading */
+
+.job-typed-out {
+  overflow: hidden;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  animation: job-typing 1.5s steps(18, end) forwards,
+    blink 0.5s step-end infinite alternate;
+  width: 0;
+  margin-bottom: 50px;
+}
+
+@keyframes job-typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 49%;
+  }
+}
+
+/* Blinking cursor animation */
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/**************************** End of Enhancement 1 ***********************/
+
+/**************************** Start of Enhancement 2 ***********************/
+
+/* Adapted From:
+https://www.youtube.com/watch?v=H_64n7gY3h0
+https://www.w3schools.com/cssref/sel_hover.php
+https://stackdiary.com/gradient-hover-effect-css/
+ */
+
+.about-card:hover {
+  transform: scale(1.2);
+  background: linear-gradient(#9bc7f4, #6045ea);
+  color: whitesmoke;
+  box-shadow: 0px 3px 5px #9bc7f4;
+}
+.about-card:hover > p {
+  color: whitesmoke;
+}
+
+.about-card h3:hover,
+.about-card p:hover {
+  color: #fddc5c;
+}
+
+.about-card:hover > img {
+  transform: scale(1.1);
+}
+.about-mail a:hover,
+.link-report a:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(#9bc7f4, #8567f7);
+  color: #fddc5c;
+}
+
+.about-mail a:active,
+.link-report a:active {
+  transform: scale(0.9);
+}
+
+.about-group-info dl:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(#9bc7f4, #6045ea);
+  color: white;
+  box-shadow: 0px 3px 5px #9bc7f4;
+}
+
+.about-group-info dt:hover {
+  transform: scale(1.095);
+  color: #fddc5c;
+}
+
+.about-group-info dd:hover {
+  transform: scale(1.2);
+  color: #fddc5c;
+}
+.about-timetable:hover {
+  box-shadow: 0px 5px 10px #9bc7f4;
+}
+
+.about-timetable:hover,
+.about-timetable h2:hover {
+  transform: scale(1.1);
+}
+
+.about-timetable h2:hover,
+.about-timetable th:hover,
+.about-timetable td:hover {
+  color: #fddc5c;
+}
+
+.about-timetable th:hover,
+.about-timetable td:hover {
+  transform: scale(1.2);
+}
+
+.about-group-img:hover {
+  margin-top: 80px;
+  transform: scale(1.2);
+}
+
+.about-group-img img:hover {
+  box-shadow: 0px 5px 20px #9bc7f4;
+}
+
+.about-group-img figcaption:hover {
+  color: #fddc5c;
+}
+
+.apply-input[type="submit"]:hover {
+  transform: scale(1.2);
+  color: wheat;
+  background-image: linear-gradient(#9bc7f4, #8567f7);
+}
+/**************************** End of Enhancement 2 ***********************/
