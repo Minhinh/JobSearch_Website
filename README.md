@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# COS26 Assignment One
-
-Deadline Is Coming guys
-
 # DEADLINES
 
 - Group form Mar 12 (end of Week 2)
@@ -30,4 +25,4 @@ Deadline Is Coming guys
 https://swinburne.instructure.com/courses/49151/assignments/504478
 =======
 # JobSearch_Website
->>>>>>> a43c0e4f4e3e1997788f920c082f9a103ac10da7
+a43c0e4f4e3e1997788f920c082f9a103ac10da7
